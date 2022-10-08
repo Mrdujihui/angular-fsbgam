@@ -16,7 +16,7 @@ export class ProductDetailsComponent implements OnInit {
   ) {}
   addToCart(product: Product) {
     this.cartService.addToCart(product);
-    window.alert('');
+    window.alert('商品已添加到购物车');
   }
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
